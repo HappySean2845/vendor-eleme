@@ -1,0 +1,15 @@
+员工首页是staff_index,
+嘉宾首页是vip_index,
+未获奖首页是no_qualification_index
+
+v1.1
+调整员工首页字的位置
+增加information.html信息页的地图和地图上的动态的点
+get_award.html增加点击开启礼品的样式
+
+v1.2
+增加information的seat切图及后端写法
+
+v1.3
+增加获奖名单对象，并写入list.html
+如果要改名字或者什么，去list.js里改
