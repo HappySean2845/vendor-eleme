@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi, minimum-scale=0.5,maximum-scale=2,user-scalable=no">
+<title>饿了么2017年度盛典</title>
+<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body class="get_award">
+  <a class="back" href="staff.html"></a>
+  <img class="gift" src="img/gift.png">
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('.gift').click(function(){
+  $(this).addClass('gift_animation');
+  setTimeout(function(){
+    $('.gift').attr('src','img/gift_open.png');
+    alert('恭喜您获得xxxx');
+  },1100)
+})
+  
+</script>
+</body>
+</html> 
