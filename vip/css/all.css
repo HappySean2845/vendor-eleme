@@ -358,6 +358,14 @@ figure figcaption{ float:left;}
   top: 300px;
   width:510px;
 }
+.seat .seat_hint{
+  position:absolute;
+  width:100%;
+  text-align:center;
+  top:70%;
+  color:#FFFFDD;
+  font-size:28px;
+}
 .preview{
   height:1542px;
   background-color:#004ac7;
