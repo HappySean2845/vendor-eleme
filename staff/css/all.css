@@ -341,12 +341,22 @@ figure figcaption{ float:left;}
   top:400px;
   left:32%;
 }
-.map{ background:url(../img/map.jpg) center top no-repeat;background-size:640px;}
-.seat{ background:url(../img/seat.jpg) center top no-repeat;background-size:640px;}
-.seat .seat_detail{
+.get_award .award_text{
   position:absolute;
-  left:22%;
-  top:300px;
+  width:100%;
+  text-align:center;
+  font-size:28px;
+  color:#FFF4CC;
+  top:26%;
+  display:none;
+}
+.map{ background:url(../img/map.jpg) center top no-repeat;background-size:640px;}
+.seat{ background:url(../img/seat_1.jpg) center top no-repeat;background-size:640px;}
+.seat .seat_detail{
+  position: absolute;
+  left: 10%;
+  top: 300px;
+  width:510px;
 }
 .preview{
   height:1542px;

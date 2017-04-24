@@ -9,6 +9,7 @@
 </head>
 <body class="get_award">
   <a class="back" href="staff.html"></a>
+  <div class="award_text"></div>
   <img class="gift" src="img/gift.png">
   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -16,7 +17,7 @@ $('.gift').click(function(){
   $(this).addClass('gift_animation');
   setTimeout(function(){
     $('.gift').attr('src','img/gift_open.png');
-    alert('恭喜您获得xxxx');
+    $('.award_text').show().html('恭喜您获得xxxxx');
   },1100)
 })
   
