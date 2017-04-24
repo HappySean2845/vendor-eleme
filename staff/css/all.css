@@ -356,35 +356,70 @@ figure figcaption{ float:left;}
   position:absolute;
 }
 body.preview img{position:absolute;}
-body.preview img:nth-of-type(1){
+body.preview img.hide:nth-of-type(1){
   top: 262px;
   left: 162px;
 }
-body.preview img:nth-of-type(2){
+body.preview img.hide:nth-of-type(2){
   top: 422px;
   right: 162px;
 }
-body.preview img:nth-of-type(3){
+body.preview img.hide:nth-of-type(3){
   top: 582px;
   left: 162px;
 }
-body.preview img:nth-of-type(4){
+body.preview img.hide:nth-of-type(4){
   top: 692px;
   right: 186px;
 }
-body.preview img:nth-of-type(5){
+body.preview img.hide:nth-of-type(5){
   top: 833px;
   left: 152px;
 }
-body.preview img:nth-of-type(6){
+body.preview img.hide:nth-of-type(6){
   top: 953px;
   right: 127px;
 }
-body.preview img:nth-of-type(7){
+body.preview img.hide:nth-of-type(7){
   top: 1082px;
   left: 93px;
 }
-body.preview img:nth-of-type(8){
+body.preview img.hide:nth-of-type(8){
   bottom: 104px;
+  left: 162px;
+}
+.preview img.show{
+  display:none;
+}
+body.preview img.show:nth-of-type(9){
+  top: 262px;
+  left: 162px;
+}
+body.preview img.show:nth-of-type(10){
+  top: 422px;
+  right: 162px;
+}
+body.preview img.show:nth-of-type(11){
+  top: 582px;
+  left: 162px;
+}
+body.preview img.show:nth-of-type(12){
+  top: 672px;
+  right: 186px;
+}
+body.preview img.show:nth-of-type(13){
+  top: 833px;
+  left: 152px;
+}
+body.preview img.show:nth-of-type(14){
+  top: 953px;
+  right: 174px;
+}
+body.preview img.show:nth-of-type(15){
+  top: 1063px;
+  left: 159px;
+}
+body.preview img.show:nth-of-type(16){
+  bottom: 177px;
   left: 162px;
 }
