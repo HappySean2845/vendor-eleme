@@ -27,7 +27,48 @@
    <img class="show" src="img/preview/x-8.png">
   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript">
-
+  var now = new Date();
+  var period = {
+    '1':{
+      start : new Date('2017/04/25 14:00'),
+      end   : new Date('2017/04/25 14:20')
+    },
+    '2':{
+      start : new Date('2017/04/25 14:30'),
+      end   : new Date('2017/04/25 14:36')
+    },
+    '3':{
+      start : new Date('2017/04/25 15:00'),
+      end   : new Date('2017/04/25 15:10')
+    },
+    '4':{
+      start : new Date('2017/04/25 16:05'),
+      end   : new Date('2017/04/25 16:10')
+    },
+    '5':{
+      start : new Date('2017/04/25 16:10'),
+      end   : new Date('2017/04/25 16:17')
+    },
+    '6':{
+      start : new Date('2017/04/25 17:17'),
+      end   : new Date('2017/04/25 17:25')
+    },
+    '7':{
+      start : new Date('2017/04/25 17:25'),
+      end   : new Date('2017/04/25 17:32')
+    },
+    '8':{
+      start : new Date('2017/04/25 17:33'),
+      end   : new Date('2017/04/25 17:40')
+    },
+  }
+  for(var k in period){
+    if(now>=period[k].start&&now<=period[k].end){
+      $(".hide").eq([k-1]).hide();
+      $('.show').eq([k-1]).show();
+      break;
+    }
+  }
   </script>
 </body>
 </html>
