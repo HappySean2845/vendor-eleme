@@ -1,5 +1,5 @@
-<?php 
-  $seat = 1;
+<?php
+  $seat = 2;
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,19 +17,19 @@
   <div class="translate-back">
     <div class="m-page">
       <section class="swiper-slide map">
-        <a class="back" href="staff_menu.html"></a> 
+        <a class="back" href="staff_menu.html"></a>
         <img src="img/map_point.png" class="map_point">
       </section>
     </div>
-    
+
     <div class="m-page f-hide">
       <section class="swiper-slide seat">
         <a class="back" href='staff_menu.html'></a>
         <!-- 到时候按照$seat变量的值来取图片 -->
-        <img src="img/seat/<?php echo $seat?>.png" class="seat_detail">
+        <img src="img/seat/<?php echo $seat?>.jpg" class="seat_detail">
       </section>
     </div>
-    
+
   </div>
 </section>
 
