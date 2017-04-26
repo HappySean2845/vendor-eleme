@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi, minimum-scale=0.5,maximum-scale=2,user-scalable=no">
+<title>饿了么2017年度盛典</title>
+<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body class="query">
+<audio src="bgm.wav" autoplay='autoplay' loop="true" sytle="display:none"></audio>
+  <a class="back" href='vip_menu.html'></a>
+	  <input class="text" type="text" placeholder="区号" id='area'>
+	  <input class="text" type="text" placeholder="排号" id='row'>
+	  <input class="text" type="text" placeholder="座位号" id='pos'>
+  	<input type="submit" class="index_button query_button" value="" href="get_award.html"></a>
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$('.index_button').click(function(){
+  		var area = $('#area').val();
+  		var row = $('#row').val();
+  		var pos = $('#pos').val();
+  		$.ajax({
+  			type:'post',
+  			url:'./web/api.php/index/search',
+  			dataType:'json',
+  			data:{'area':area,'row':row,'pos':pos},
+  			success:function(response){
+  				if(response.status==1){
+  			     location.href = 'get_award.html?prize='+response.info;
+  				}else{
+  					location.href = 'no_award.html';
+  				}
+  			}
+  		})
+  	})
+</script>
+</body>
+</html>

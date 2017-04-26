@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi, minimum-scale=0.5,maximum-scale=2,user-scalable=no">
+<title>饿了么2017年度盛典</title>
+<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body class="get_award">
+  <a class="back" href="query.html"></a>
+  <div class="award_text"></div>
+  <img class="gift" src="img/gift.png">
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+function getQueryString(name) { 
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+  var r = window.location.search.substr(1).match(reg); 
+  if (r != null) return unescape(r[2]); return null; 
+}     
+var prize = getQueryString("prize")
+if(prize=='1'){
+	var text = '奥迪Q3使用权3年';
+	var imgurl = 'img/gift/1.png';
+}else if(prize=='2'){
+	var text = '50寸乐视电视机';
+	var imgurl = 'img/gift/2.png';
+}else if(prize=='3'){
+	var text = '现金大奖';
+	var imgurl = 'img/gift/3.png';
+}else if(prize=='4'){
+	var text = '福袋';
+	var imgurl = 'img/gift/4.png';
+}else{
+	location.href= 'no_award.html';
+}
+$('.gift').click(function(){
+  $(this).addClass('gift_animation');
+  setTimeout(function(){
+    $('.gift').attr('src',imgurl);
+    $('.award_text').show().html(text);
+  },1100)
+})
+  
+</script>
+</body>
+</html> 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi, minimum-scale=0.5,maximum-scale=2,user-scalable=no">
+<title>饿了么2017年度盛典</title>
+<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body class="index">
+  <a class="index_button enter_button"></a>
+  <div class="mask"></div>
+  <div class="popup">
+    <div class="h1">亲爱的<span>XXX</span>，很遗憾！</div>
+    <p>因名额有限，您无法参与本次年度盛典，您可在4月28日通过本链接查看盛典精彩回顾和英雄榜！感谢您对本次盛典的关注！</p>
+    <div class="button">确定</div>
+  </div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+function getQueryString(name) { 
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+  var r = window.location.search.substr(1).match(reg); 
+  if (r != null) return unescape(r[2]); return null; 
+} 
+
+  $('.enter_button').click(function(){
+    var username = getQueryString("name")
+    $('.h1 span').html(username);
+    $('.mask').fadeIn();
+    $('.popup').fadeIn();
+  })
+  $('.popup .button').click(function(){
+    $('.mask').fadeOut();
+    $('.popup').fadeOut();
+  })
+</script>
+</body>
+</html>
